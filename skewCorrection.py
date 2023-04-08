@@ -63,6 +63,7 @@ angel = compute_skew(file_path)
 #cv2.imshow("angel",angel)
 dst = deskew(file_path,angel)
 cv2.imshow("Result",dst)
+cv2.imwrite('image/result.jpg', dst)
 cv2.waitKey(0)
 
 
